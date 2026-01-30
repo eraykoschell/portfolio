@@ -81,7 +81,7 @@ export default function Sidebar() {
             <ArrowTopRightOnSquareIcon width="1rem"/>
             <p>LinkedIn</p>
           </Link>
-          <Link href="https://github.com/eraychumak" target="_blank" rel="noreferrer">
+          <Link href="https://github.com/eraykoschell" target="_blank" rel="noreferrer">
             <ArrowTopRightOnSquareIcon width="1rem"/>
             <p>GitHub</p>
           </Link>
