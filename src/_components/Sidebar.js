@@ -77,7 +77,7 @@ export default function Sidebar() {
         </section>
         <section>
           <p className={styles.tag}>PROFILES</p>
-          <Link href="https://www.linkedin.com/in/eray-koschell/" target="_blank" rel="noreferrer">
+          <Link href="https://www.linkedin.com/in/eraykoschell/" target="_blank" rel="noreferrer">
             <ArrowTopRightOnSquareIcon width="1rem"/>
             <p>LinkedIn</p>
           </Link>
