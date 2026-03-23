@@ -1,7 +1,9 @@
-{
+import PebbleArtByKateLogo from "@/app/projects/dev/(list)/pebble-art-by-kate/assets/logos/final/logo.png";
+
+export const timeline = {
   "data": [
     {
-      "year": 2025,
+      "year": new Date().getFullYear(),
       "events": [
         {
           "month": "June 2024 - current",
@@ -17,7 +19,7 @@
             "width": "600",
             "height": "400",
             "url": "/assets/ii.jpg",
-            "alt": "A logo I did for Kate Fairclough"
+            "alt": "Interactive Investor branding"
           }
         }
       ]
@@ -28,17 +30,17 @@
         {
           "month": "February - May",
           "type": "New logo and website for a client",
-          "desc": "A local encounter with Kate, who sells pebble art frames at markets. I redesigned their old logo and developed a brand new website to reach new clients online and manage orders. First time using WordPress as they wanted to easily edit the website themselves!",
+          "desc": "A local encounter with Kate, who sells pebble art frames at markets. I redesigned her old logo and developed a brand new website to reach new clients online and manage orders.",
           "links": [
             {
-              "url": "https://pebbleartbykate.co.uk",
-              "label": "Official Website"
+              "url": "/projects/dev/pebble-art-by-kate",
+              "label": "Discover more about this project"
             }
           ],
           "thumbnail": {
             "width": "512",
             "height": "256",
-            "url": "/assets/projects/kate.png",
+            "url": PebbleArtByKateLogo.src,
             "alt": "A logo I did for Kate Fairclough"
           }
         }

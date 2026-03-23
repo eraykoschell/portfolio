@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 import ExternalLink from "./ExternalLink";
-import timeline from "@/_data/timeline.json";
+import { timeline } from "@/_data/timeline.js";
 
 import styles from "./Timeline.module.css";
 
