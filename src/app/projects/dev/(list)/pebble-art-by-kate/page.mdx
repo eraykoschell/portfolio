@@ -1,0 +1,170 @@
+import Image from "next/image";
+import ExternalLink from "@/_components/ExternalLink";
+
+import ProjectProps from "@/app/projects/_components/ProjectProps";
+import ProjectBadges from "@/app/projects/_components/ProjectBadges";
+import ProjectBadge from "@/app/projects/_components/ProjectBadge";
+
+import ClientLogo from "./assets/logos/client-original.png";
+import Brand from "./assets/brand.png";
+
+import LogoIterationOne from "./assets/logos/iterations/iteration-one-preview.png";
+import LogoIterationOneMockup from "./assets/logos/iterations/iteration-one-mockup.png";
+import LogoIterationTwo from "./assets/logos/iterations/iteration-two-preview.png";
+import LogoIterationTwoMockup from "./assets/logos/iterations/iteration-two-mockup.png";
+
+import FinalLogo from "./assets/logos/final/logo.png";
+
+import PageHome from "./assets/website/home.png";
+import PageShop from "./assets/website/shop.png";
+import PageProduct from "./assets/website/product-page.png";
+
+import Fail from "./assets/fail.png";
+
+<article>
+
+# Pebble Art By Kate
+
+<ProjectBadges>
+  <ProjectBadge label="Client Project"/>
+</ProjectBadges>
+
+<Image src={FinalLogo} alt="Pebble Art By Kate logo with two pebble birds on a branch" />
+
+This project came about through a local encounter with Kate Fairclough, who was selling pebble art at a market near my university. I redesigned her old logo and developed a brand new website to reach new clients online and manage orders.
+
+I chose to use <ExternalLink url="https://wordpress.com/" label="WordPress" /> with <ExternalLink url="https://woocommerce.com/" label="WooCommerce" /> for the e-commerce functionality, allowing Kate to easily manage products, orders, and content without needing to rely on a developer for updates.
+
+> **Note:** The website was previously live at pebbleartbykate.co.uk, but it was taken offline in 2025. Kate's work is still available to view on her <ExternalLink url="https://www.instagram.com/pebble_art.gifts" label="official Instagram" />.
+
+## Onboarding
+
+### Client background
+
+Kate sells pebble art frames at local markets and through social media, relying on text messages to manage orders. She needed an online presence to expand her reach and streamline order management.
+
+### Project scope
+
+#### Deliverables
+- E-commerce website with product management
+- Brand logo design
+- Domain setup and hosting configuration
+
+#### Key requirements
+- Custom order functionality with personalisation options (frame colours, custom wording)
+- Product filtering by category (family, life events, pets)
+- Client-managed content system for future updates
+- Floral pastel colour scheme (green, pink, cream)
+
+#### Technology choice
+
+I chose <ExternalLink url="https://wordpress.com/" label="WordPress" /> with <ExternalLink url="https://woocommerce.com/" label="WooCommerce" /> for the e-commerce functionality. This platform allows Kate to easily manage products, orders, and content without needing to rely on a developer for updates.
+
+<ExternalLink url="https://www.shopify.com/" label="Shopify" /> was a bit too expensive for the use case, and <ExternalLink url="https://wordpress.com/" label="WordPress" /> offered more flexibility for customisation and future growth without ongoing subscription fees.
+
+#### Timeline
+
+We didn't want to spend too long on the project so we spent around a month to get it up and running.
+
+## Logo
+
+Kate had an existing logo that she used on social media and market materials.
+
+<Image src={ClientLogo} alt="Original client logo used before the redesign" style={{ maxWidth: "200px" }} />
+
+While it captured the handmade, personal nature of her business, it needed refinement for digital use and better scalability.
+
+### Iteration process
+
+#### First iteration
+
+I started off with many iterations, exploring different layouts and elements while maintaining the pebble bird characters that were central to Kate's brand identity.
+
+<Image src={LogoIterationOne} alt="First logo iteration exploring layout and pebble bird elements" />
+
+The mockups helped visualise the logo in a real-world context, showing how it would appear on the Instagram profile.
+
+<Image src={LogoIterationOneMockup} alt="Mockup of first logo iteration displayed on an Instagram profile" />
+
+The biggest challenge was figuring out how to make it look good while not being "pixel-perfect" to maintain the handmade, personal feel. I wanted to keep the charm of the original logo while improving its clarity and versatility.
+
+#### Second iteration
+
+After the first round of feedback, we leaned further into the two birds on a branch concept. This gave each element more room to breathe and improved the overall balance.
+
+This also allowed the text to stand out more clearly, creating a stronger hierarchy and drawing the eye toward the center.
+
+<Image src={LogoIterationTwo} alt="Second logo iteration with two birds on a branch and improved text hierarchy" />
+
+<Image src={LogoIterationTwoMockup} alt="Mockup of second logo iteration in social media context" />
+
+### What we landed on
+
+The final logo has a branch edge-to-edge with the birds perched on the left, and the 'by' joining the two halves of the circle.
+
+<Image src={FinalLogo} alt="Final Pebble Art By Kate logo with branch spanning the circle and birds on the left" style={{ maxWidth: "500px" }} />
+
+## Colours & Fonts
+
+The colour palette and fonts reflect Kate's handmade, natural aesthetic with soft pastels.
+
+We used the finalised logo as a starting point, drawing colour and font choices directly from it to build out the wider brand foundations.
+
+<Image src={Brand} alt="Brand board showing pastel colour palette and selected typography" style={{ maxWidth: "400px" }} />
+
+## Website
+
+### Homepage
+
+<Image src={PageHome} alt="Homepage design showing featured products and brand storytelling" />
+
+The homepage welcomes visitors with Kate's personal story and showcases featured products. It emphasises the handmade, personal nature of each piece while making it easy to browse and shop.
+
+### Shop page
+
+<Image src={PageShop} alt="Shop page with product grid and category filtering" />
+
+The shop page features a product grid with category filters, allowing customers to easily find pieces for specific occasions (family, life events, pets, etc.).
+
+### Product page
+
+<Image src={PageProduct} alt="Product page with customisation options for frame colour and personalised text" />
+
+Each product page includes customisation options for frame colour and personalised text, essential for Kate's bespoke offerings.
+
+The <ExternalLink url="https://woocommerce.com/" label="WooCommerce" /> integration allows Kate to manage inventory and orders efficiently.
+
+## Reflection
+
+I naturally avoid site builders, so this was a great opportunity to explore <ExternalLink url="https://wordpress.com/" label="WordPress" /> and see how far I could push a semi-custom e-commerce build without writing a single line of code.
+
+I broke things more than once while learning how the theme and content fit together.
+
+<Image src={Fail} alt="Broken layout while configuring the WordPress site" />
+
+_Ignore the plants - they were the defaults._
+
+I also learnt a bit about the WordPress ecosystem, including the various plugins available for e-commerce and customisation. Not to mention how bloody expensive they can be for certain features that you can probably conjure up in a day nowadays.
+
+In the end, I was able to get everything up and running within the timeline we set.
+
+</article>
+
+<ProjectProps data={[
+  {
+    label: "Name",
+    value: "Pebble Art By Kate"
+  },
+  {
+    label: "Short name",
+    value: "Pebble Art"
+  },
+  {
+    label: "Technologies",
+    value: "WordPress, Figma"
+  },
+  {
+    label: "Date",
+    value: "January - February 2024"
+  },
+]}/>

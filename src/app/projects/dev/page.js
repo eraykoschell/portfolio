@@ -4,6 +4,8 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import ProjectBadge from "../_components/ProjectBadge";
 
+import PebbleArtByKateLogo from "@/app/projects/dev/(list)/pebble-art-by-kate/assets/logos/final/logo.png";
+
 export default function PageProjectsDev() {
   return (
     <main className={styles.container}>
@@ -11,7 +13,17 @@ export default function PageProjectsDev() {
         <h1>Dev. Projects</h1>
         <p>Learn about my experience and workflow</p>
       </header>
-      <section>
+      <section className={styles.projectsByYear}>
+        <h2>2024</h2>
+        <section className={styles.projects}>
+          <Link href="/projects/dev/pebble-art-by-kate" className={styles.project}>
+            <Image src={PebbleArtByKateLogo} alt="Pebble Art By Kate logo"/>
+            <div className={styles.content}>
+              <p>Pebble Art By Kate</p>
+              <ProjectBadge label="Client Project"/>
+            </div>
+          </Link>
+        </section>
         <h2>2023</h2>
         <section className={styles.projects}>
           <Link href="/projects/dev/mtfm" className={styles.project}>

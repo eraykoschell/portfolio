@@ -35,7 +35,6 @@
 .container img {
   width: 100%;
   height: auto;
-  max-height: 500px;
   object-fit: cover;
   border-radius: .5rem;
   border: solid .2rem #fff;

@@ -15,6 +15,12 @@
   color: #EED36C;
 }
 
+.projectsByYear {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 .projects {
   display: grid;
   gap: 1rem;
