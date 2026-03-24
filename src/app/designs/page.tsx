@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 
+import TheMaltHousePreview from "@/app/designs/designs/the-malthouse-business-centre/assets/the-malthouse-business-centre-home-before-desktop.png";
+
 import styles from "./page.module.css";
 
 export default function PageDesigns() {
@@ -12,7 +14,7 @@ export default function PageDesigns() {
       </header>
       <section className={styles.writing}>
         <Link href="/designs/designs/the-malthouse-business-centre" className={styles.article}>
-          <Image src="/assets/designs/the-malthouse-business-centre/the-malthouse-business-centre-home-after.png" width="1440" height="3747" alt=""/>
+          <Image src={TheMaltHousePreview} alt="Original desktop home page before redesign" />
           <div className={styles.content}>
             <p>The Malthouse Business Centre</p>
             <p>2024</p>

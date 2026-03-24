@@ -1,4 +1,5 @@
 import PebbleArtByKateLogo from "@/app/projects/dev/(list)/pebble-art-by-kate/assets/logos/final/logo.png";
+import TheMaltHousePreview from "@/app/designs/designs/the-malthouse-business-centre/assets/preview.png";
 
 export const timeline = {
   "data": [
@@ -43,7 +44,24 @@ export const timeline = {
             "url": PebbleArtByKateLogo.src,
             "alt": "A logo I did for Kate Fairclough"
           }
-        }
+        },
+        {
+          "month": "January - May",
+          "type": "University project: UX case study",
+          "desc": "Redesigned The Malthouse Business Centre website using a heuristic evaluation to identify usability issues and propose accessible, mobile-friendly improvements.",
+          "links": [
+            {
+              "url": "/designs/designs/the-malthouse-business-centre",
+              "label": "Discover more about this project"
+            }
+          ],
+          "thumbnail": {
+            "width": "1045",
+            "height": "637",
+            "url": TheMaltHousePreview.src,
+            "alt": "The Malthouse Business Centre redesigned homepage"
+          }
+        },
       ]
     },
     {

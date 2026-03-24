@@ -1,35 +1,90 @@
 import Image from "next/image";
-import Link from "next/link";
 import styles from "../layout.module.css";
+import ExternalLink from "@/_components/ExternalLink";
 
 import ProjectProps from "@/app/projects/_components/ProjectProps";
+import ProjectBadges from "@/app/projects/_components/ProjectBadges";
 import ProjectBadge from "@/app/projects/_components/ProjectBadge";
+
+import PhysicalBusiness from "./assets/physical_business.jpeg";
+import DesktopHomeBefore from "./assets/the-malthouse-business-centre-home-before-desktop.png";
+import MobileHomeBefore from "./assets/the-malthouse-business-centre-home-before-mobile.png";
+
+import BrandColours from "./assets/brand/colours.png";
+import BrandTypography from "./assets/brand/typography.png";
+
+import OriginalLogo from "./assets/logo/original_logo.png";
+import NewLogo from "./assets/logo/new_logo.png";
+
+import DesktopHomeAfter from "./assets/pages/desktop-home-after.png";
+import MobileHomeAfter from "./assets/pages/mobile-home-after.png";
+
+import PageAvailableSpacesOffice from "./assets/pages/available_spaces_office.png";
+import PageAvailableSpacesUnits from "./assets/pages/available_spaces_units.png";
+import PageContact from "./assets/pages/contact.png";
+
+import AnalysisHome from "./assets/pages/analysis/home.png";
+import AnalysisOfficesAvailable from "./assets/pages/analysis/offices_available.png";
+import AnalysisUnitsAvailable from "./assets/pages/analysis/units_available.png";
+import AnalysisContact from "./assets/pages/analysis/contact.png";
 
 <article>
 
-<ProjectBadge label="DRAFT"/>
+<ProjectBadges>
+  <ProjectBadge label="Design"/>
+  <ProjectBadge label="University Project"/>
+  <ProjectBadge label="UX Case Study"/>
+</ProjectBadges>
 
 # The Malthouse Business Centre
 
-2024
+<ExternalLink url="https://themalthousebusinesscentre.co.uk/" label="The Malthouse Business Centre"/>, a family-run business, is situated in the heart of Ormskirk, Lancashire. Purchased in 1994 by the Lloyd family, this historic 19th-century building – once used for drying grain to make malt – has been lovingly renovated over the past two decades. Today, it offers high-quality office spaces and business units in a unique, characterful setting.
 
-The Malthouse Business Centre, a family-run business, is situated in the heart of Ormskirk, Lancashire. Purchased in 1994 by the Lloyd family, this historic 19th-century building – once used for drying grain to make malt – has been lovingly renovated over the past two decades. Today, it offers high-quality office spaces and business units in a unique, characterful setting.
-
-<Image src="/assets/designs/the-malthouse-business-centre/physical_business.jpeg" width="1600" height="1200" alt="" className={styles.thumbnail}/>
+<Image src={PhysicalBusiness} alt="The Malthouse Business Centre building exterior" className={styles.thumbnail}/>
 
 ## Motivation
 
-I did this during my time at Edge Hill University where our tutor said pick a local business and create a design for them taking into consideration the user's needs, the business's goals, and the overall user experience. I wanted to create a design that would not only look good but also be functional and user-friendly. The goal was to enhance the online presence of The Malthouse Business Centre, making it easier for potential tenants to find information and get in touch with the business.
+I completed this project during my time at <ExternalLink url="https://www.edgehill.ac.uk/" label="Edge Hill University"/>, where we were asked to pick a local business and redesign its digital experience around user needs, business goals, and usability.
+
+I chose this brief because it reflects real agency and product work: identifying a client opportunity, analysing an existing interface, and proposing practical improvements grounded in UX principles. The goal was to improve the online presence of <ExternalLink url="https://themalthousebusinesscentre.co.uk/" label="The Malthouse Business Centre"/>, making it easier for potential tenants to find information and get in touch.
+
+## Method and scope
+
+I used the <ExternalLink url="https://www.nngroup.com/articles/ten-usability-heuristics/" label="NN/g: 10 Usability Heuristics for User Interface Design"/> to review the existing site and produce solution-driven redesign ideas.
+
+Why this method:
+- It is effective for spotting usability issues early in the design process.
+- It does not require recruiting users, which made it realistic for a student timeline and local-business budget.
+- It gave me a structured way to connect design decisions to clear usability problems.
+
+Scope of evaluation:
+- User group: business managers/directors looking for office or unit space.
+- Primary goals: help visitors understand the offer quickly and drive enquiries through contact form or phone.
+- Platforms: desktop and mobile journeys for browsing, comparing spaces, and contacting the business.
 
 ## Discovery
 
-I started by researching the business and its target audience. I looked at the existing website and identified areas for improvement.
+I researched the business and its target audience, then reviewed the existing website to identify opportunities for improvement.
 
-Some of the key findings included:
+Key findings included:
 - The text contrast was poor, making it difficult to read, especially with the slideshow images.
 - There was no clear call to action, making it hard to determine the next steps.
 - The logo is bulky and not designed with mobile screens in mind.
 - It isn't clear what the offering is as the information was buried in the text.
+
+Existing strengths worth preserving:
+- Strong social proof with a dedicated tenants page.
+- Bright imagery that helps users visualise the spaces.
+- Contact details in the footer for quick access.
+
+Heuristic issues identified:
+- Aesthetic and minimalist design
+- Visibility of system status
+- Match between the system and the real world
+- Consistency and standards
+- Recognition rather than recall
+- Help and documentation
+- Help users recognise, diagnose, and recover from errors
 
 <table>
   <thead>
@@ -42,24 +97,171 @@ Some of the key findings included:
     <tr>
       <td>
         <div className={styles.longImage}>
-          <Image src="/assets/designs/the-malthouse-business-centre/the-malthouse-business-centre-home-before-desktop.png" width="1573" height="4096" alt=""/>
+          <Image src={DesktopHomeBefore} alt="Original desktop home page before redesign" />
         </div>
       </td>
       <td>
         <div className={styles.longImage}>
-          <Image src="/assets/designs/the-malthouse-business-centre/the-malthouse-business-centre-home-mobile-before.png" width="462" height="8477" alt=""/>
+          <Image src={MobileHomeBefore} alt="Original mobile home page before redesign" />
         </div>
       </td>
     </tr>
   </tbody>
 </table>
 
-## Time to get cooking!
+### Annotated heuristic analysis
 
-One scope I set is to keep the design simple and clean, focusing on the key information that potential tenants would need. I wanted to ensure that the design was responsive and looked good on both desktop and mobile devices. I also did not want to stray too far from the original design to maintain some brand consistency and resemblance.
+I included annotated captures for the key pages to show exactly where the heuristic issues appeared and what recommendations came from each observation.
+
+#### Home page
+
+<div className={styles.longImage}>
+  <Image src={AnalysisHome} alt="Annotated heuristic analysis of the original home page" />
+</div>
+
+#### Offices available page
+
+<div className={styles.longImage}>
+  <Image src={AnalysisOfficesAvailable} alt="Annotated heuristic analysis of the original offices available page" />
+</div>
+
+#### Units available page
+
+<div className={styles.longImage}>
+  <Image src={AnalysisUnitsAvailable} alt="Annotated heuristic analysis of the original units available page" />
+</div>
+
+#### Contact page
+
+<div className={styles.longImage}>
+  <Image src={AnalysisContact} alt="Annotated heuristic analysis of the original contact page" />
+</div>
+
+## Design
+
+My scope was to keep the design simple and clean, prioritising the key information potential tenants need.
+
+I designed for both desktop and mobile and avoided straying too far from the original visual direction to preserve brand recognition.
+
+I worked iteratively, creating components and visual styles as needed (colour, typography, layout blocks), then linking them into two prototype flows: one desktop and one mobile.
 
 ### Colours
 
-I used Tailwind's super helpful [Colours](https://tailwindcss.com/docs/colors) documentation to pick out stronger colours that delivered better contrast and readability. I also used the [Contrast Checker](https://webaim.org/resources/contrastchecker/) to ensure that the colours met accessibility standards.
+I used Tailwind's super helpful [Colours](https://tailwindcss.com/docs/colors) documentation to pick out stronger colours that delivered better contrast and readability. I used the [Contrast Checker](https://webaim.org/resources/contrastchecker/) to ensure that the colours met accessibility standards.
+
+<Image src={BrandColours} alt="Brand Colours" />
+
+### Typography
+
+I chose a serif font to give a sense of tradition and history, which is fitting for a business located in a historic building.
+
+It also aligns with the seriousness of the business, which is important for attracting potential tenants.
+
+<Image src={BrandTypography} alt="Brand Typography" />
+
+
+### Logo
+
+The original logo resembles the physical building of the business, however, it is not designed with mobile screens in mind. It was hard to fit into the header without taking up too much space or looking awkward.
+
+<Image src={OriginalLogo} alt="Original Logo" style={{ maxWidth: "400px" }} />
+
+I redesigned the logo to be more compact and versatile, while still maintaining the essence of the original design, mainly by simplifying the building illustration.
+
+<Image src={NewLogo} alt="New Logo" style={{ maxWidth: "400px" }} />
+
+## Pages
+
+Overall, my aim was to give all the elements of the page more breathing room, making it easier for users to find the information they need and navigate the site.
+
+### Home
+
+There was no clear call to action on the original home page. Based on business goals, I prioritised two primary user actions: browsing available spaces and viewing current tenants.
+
+<table>
+  <thead>
+    <tr>
+      <th>Desktop</th>
+      <th>Mobile</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <div className={styles.longImage}>
+          <Image src={DesktopHomeAfter} alt="Redesigned desktop home page" />
+        </div>
+      </td>
+      <td>
+        <div className={styles.longImage}>
+          <Image src={MobileHomeAfter} alt="Redesigned mobile home page" />
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+I also made interior imagery more prominent to better communicate the character and atmosphere of the business centre, which is a key selling point.
+
+For example, one caption highlights that the site is a two-minute walk from the town centre.
+
+The website also didn't properly highlight the amenities of the business centre, so I added a section to clearly showcase the facilities and services available to tenants, such as free parking, IT support, internet access, and more.
+
+### Contact us page
+
+<div className={styles.longImage}>
+  <Image src={PageContact} alt="Redesigned contact page" />
+</div>
+
+### Available spaces page
+
+I wanted to make it super clear what spaces are available for rent, clearly distinguishing between office space and units.
+
+#### Office
+
+<div className={styles.longImage}>
+  <Image src={PageAvailableSpacesOffice} alt="Redesigned available office spaces page" />
+</div>
+
+#### Units
+
+<div className={styles.longImage}>
+  <Image src={PageAvailableSpacesUnits} alt="Redesigned available units page" />
+</div>
+
+There is an opportunity to collect leads when there are no spaces available for rent, as potential tenants may want to express interest in the available spaces and get notified when they become available.
+
+## Reflection
+
+This project helped me practise balancing business goals with user needs under realistic constraints. The heuristic method was useful for producing clear, actionable design changes quickly.
+
+If this were moving beyond concept stage, my next step would be usability testing with prospective tenants to validate the redesigned journeys and measure whether enquiry actions improved.
 
 </article>
+
+<ProjectProps data={[
+  {
+    label: "Name",
+    value: "The Malthouse Business Centre"
+  },
+  {
+    label: "Role",
+    value: "UX/UI Designer (solo)"
+  },
+  {
+    label: "Duration",
+    value: "Jan. - May 2024"
+  },
+  {
+    label: "Methods",
+    value: "Heuristic evaluation, responsive prototyping"
+  },
+  {
+    label: "Deliverables",
+    value: "UX audit, redesign concept, desktop/mobile prototype"
+  },
+  {
+    label: "Technologies",
+    value: "Figma, UI/UX"
+  },
+]}/>
