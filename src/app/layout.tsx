@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     siteName: "Eray Koschell Portfolio",
     images: [
       {
-        url: "/pfp.avif",
+        url: "/pfp.webp",
         width: 400,
         height: 400,
         alt: "Eray Koschell - Software Engineer",

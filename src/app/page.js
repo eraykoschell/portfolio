@@ -4,6 +4,7 @@ import ChatBubbleBottomCenterIcon from "@heroicons/react/24/outline/ChatBubbleBo
 import Timeline from "../_components/Timeline";
 import DisplayNameImage from "@/assets/display_name_white.webp";
 import PfpImage from "@/assets/pfp.webp";
+import ManchesterSkylineImage from "@/assets/manchester_skyline.webp";
 
 import styles from "./page.module.css";
 
@@ -22,12 +23,20 @@ export default function Home() {
           <p className={styles.jobTitle}>Software Engineer</p>
           <p className={styles.degree}>BSc (Hons) Web Design & Development</p>
         </section>
-        <section className={styles.pfp}>
+        <section className={styles.pfpBanner}>
           <Image
-            src={PfpImage}
-            alt="A portrait picture of Eray with Manchester city skyline as the background."
+            src={ManchesterSkylineImage}
+            className={styles.bannerImage}
+            alt="Manchester skyline"
             priority
           />
+          <div className={styles.pfp}>
+            <Image
+              src={PfpImage}
+              alt="A picture of me pointing at the sea."
+              priority
+            />
+          </div>
         </section>
       </header>
       <section className={styles.intro}>

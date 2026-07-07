@@ -5,7 +5,7 @@ const structuredData: WithContext<Person> = {
   "@type": "Person",
   name: "Eray Koschell",
   url: "https://eraykoschell.dev",
-  image: "https://eraykoschell.dev/pfp.avif",
+  image: "https://eraykoschell.dev/pfp.webp",
   jobTitle: "Software Engineer",
   address: {
     "@type": "PostalAddress",
